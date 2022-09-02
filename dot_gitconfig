@@ -1,0 +1,7 @@
+[user]
+  name = Frederic Junod
+  email = frederic.junod@camptocamp.com
+[color]
+  ui = auto
+[credential]
+  helper = store
