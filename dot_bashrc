@@ -136,6 +136,10 @@ if [ -d "$HOME/.cargo/bin/" ] ; then
     PATH="$HOME/.cargo/bin/:$PATH"
 fi
 
+if [ -f "$HOME/.cargo/env" ] ; then
+    . "$HOME/.cargo/env"
+fi
+
 # See https://www.funtoo.org/Keychain
 eval "$(keychain -q --agents ssh,gpg --eval)"
 
@@ -143,4 +147,3 @@ eval "$(keychain -q --agents ssh,gpg --eval)"
 source <(gopass completion bash)
 source <(kubectl completion bash)
 source <(chezmoi completion bash)
-. "$HOME/.cargo/env"
