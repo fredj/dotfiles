@@ -5,3 +5,7 @@
   ui = auto
 [credential]
   helper = store
+[core]
+	pager = diffr | less -R
+[interactive]
+	difffilter = diffr
