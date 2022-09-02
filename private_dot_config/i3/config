@@ -2,16 +2,11 @@
 #
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
-# Home row direction keys, like vim
 set $left h
 set $down j
 set $up k
 set $right l
-# Your preferred terminal emulator
 set $term x-terminal-emulator
-# Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened
-# on the original workspace that the command was run on.
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 font pango:monospace 10
@@ -135,9 +130,6 @@ bindswitch --reload lid:off output eDP-1 enable
 #
 # Scratchpad:
 #
-    # Sway has a "scratchpad", which is a bag of holding for windows.
-    # You can send windows there and get them back later.
-
     # Move the currently focused window to the scratchpad
     bindsym $mod+Shift+minus move scratchpad
 
@@ -172,7 +164,6 @@ bindsym $mod+r mode "resize"
 #
 # Status Bar:
 #
-# Read `man 5 sway-bar` for more information about this section.
 bar {
     position top
 #    font pango:Hack 8
@@ -198,5 +189,3 @@ exec --no-startup-id gsettings set org.gnome.desktop.interface icon-theme 'Adwai
 exec --no-startup-id gsettings set org.gnome.desktop.interface font-name 'DejaVu Sans 9'
 exec --no-startup-id gsettings set org.gnome.desktop.interface monospace-font-name 'Hack Regular 10'
 exec --no-startup-id gsettings set org.gnome.Terminal.Legacy.Settings headerbar false
-
-# include /etc/sway/config.d/*
