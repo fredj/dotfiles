@@ -183,6 +183,8 @@ bar {
 
 exec --no-startup-id nm-applet
 
+exec --no-startup-id feh --bg-scale ~/Pictures/background.jpeg
+
 exec --no-startup-id gsettings set org.gnome.desktop.interface gtk-theme 'Arc'
 exec --no-startup-id gsettings set org.gnome.desktop.interface icon-theme 'Adwaita'
 exec --no-startup-id gsettings set org.gnome.desktop.interface font-name 'DejaVu Sans 9'
