@@ -7,9 +7,8 @@ set $down j
 set $up k
 set $right l
 set $term x-terminal-emulator
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
-font pango:monospace 10
+font pango:monospace 9
 
 bindswitch --reload lid:on  output eDP-1 disable
 bindswitch --reload lid:off output eDP-1 enable
@@ -25,7 +24,7 @@ bindswitch --reload lid:off output eDP-1 enable
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+d exec --no-startup-id dmenu_run
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -166,7 +165,7 @@ bindsym $mod+r mode "resize"
 #
 bar {
     position top
-#    font pango:Hack 8
+    font pango:Hack 8
     status_command ~/code/bumblebee-status/bumblebee-status -m cpu memory load pasink battery datetime -t iceberg-powerline
 }
 
