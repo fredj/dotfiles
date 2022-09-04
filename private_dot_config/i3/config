@@ -165,7 +165,6 @@ bindsym $mod+r mode "resize"
 #
 bar {
     position top
-    font pango:Hack 8
     status_command ~/code/bumblebee-status/bumblebee-status -m cpu memory load pasink battery datetime -t iceberg-powerline
 }
 
