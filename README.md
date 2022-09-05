@@ -4,6 +4,5 @@ My dotfiles, managed with [`chezmoi`](https://github.com/twpayne/chezmoi). Perso
 
 Install them with:
 
-    sudo apt install curl git lastpass-cli
     lpass login <email>
     sh -c "$(curl -fsLS https://chezmoi.io/get)" -- init --apply fredj
