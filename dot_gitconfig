@@ -6,6 +6,6 @@
 [credential]
   helper = store
 [core]
-	pager = diffr | less -R
+  pager = diffr | less -R
 [interactive]
-	difffilter = diffr
+  difffilter = diffr
