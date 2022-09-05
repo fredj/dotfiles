@@ -168,17 +168,11 @@ bar {
     status_command ~/code/bumblebee-status/bumblebee-status -m cpu memory load pasink battery datetime -t iceberg-powerline
 }
 
-# for_window [app_id="pavucontrol"] floating enable, resize set 640 480
-# for_window [app_id="gnome-power-statistics"] floating enable, resize set 640 480
-# for_window [app_id="gnome-system-monitor"] floating enable, resize set 800 600
-# for_window [app_id="nm-connection-editor"] floating enable, resize set 640 480
 
-# for_window [app_id="guvcview"] floating enable, resize set 800 600
-# for_window [class="guvcview"] floating enable, resize set 800 600
-
-# for_window [class="zoom"] floating enable, resize set 800 600
-
-# for_window [title="MetaMask Notification"] floating enable
+for_window [class="Pavucontrol"] floating enable, move position center, resize set 640 480
+for_window [class="Gnome-power-statistics"] floating enable, move position center, resize set 640 480
+for_window [class="Gnome-system-monitor"] floating enable, move position center, resize set 800 600
+for_window [class="Nm-connection-editor"] floating enable, move position center, resize set 640 480
 
 exec --no-startup-id nm-applet
 
