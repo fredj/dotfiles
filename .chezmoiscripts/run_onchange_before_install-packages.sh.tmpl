@@ -1,6 +1,6 @@
 {{ if eq .chezmoi.osRelease.idLike "debian" -}}
 
-{{ $sudo := "sudo " -}}
+{{ $sudo := "sudo" -}}
 {{ if eq .chezmoi.username "root" -}}
 {{   $sudo = "" -}}
 {{ end -}}
@@ -8,6 +8,6 @@
 #!/bin/bash
 
 {{ $sudo }} apt update
-{{ $sudo }} apt -y install curl git lastpass-cli
+{{ $sudo }} apt -y install git keychain
 
 {{ end -}}
