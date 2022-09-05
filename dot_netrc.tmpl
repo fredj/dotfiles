@@ -1,0 +1,2 @@
+machine jira.camptocamp.com login {{ (index (lastpass "jira.camptocamp.com") 0).username }} password {{ (index (lastpass "jira.camptocamp.com") 0).password }}
+
