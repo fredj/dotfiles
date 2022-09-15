@@ -1,9 +1,10 @@
 #!/bin/bash
 
 if [ "$1" == "on" ]; then
-    xrandr --setmonitor eDP-1-1 960/154x1080/174+0+0 eDP-1
-    xrandr --setmonitor eDP-1-2 960/155x1080/174+960+0 none
+    xrandr --output DP-3 --mode 5120x2160 --rate 74.98
+    xrandr --setmonitor virt-screen-1 2560/464x2160/392+1920+0 DP-3
+    xrandr --setmonitor virt-screen-2 2560/465x2160/392+4480+0 none
 elif [ "$1" == "off" ]; then
-    xrandr --delmonitor eDP-1-1
-    xrandr --delmonitor eDP-1-2
+    xrandr --delmonitor virt-screen-1
+    xrandr --delmonitor virt-screen-2
 fi
