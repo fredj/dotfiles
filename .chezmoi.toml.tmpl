@@ -1,0 +1,4 @@
+{{- $dpi := promptIntOnce . "dpi" "dots per inch for fonts" 96 -}}
+
+[data]
+  dpi = {{ $dpi }}
