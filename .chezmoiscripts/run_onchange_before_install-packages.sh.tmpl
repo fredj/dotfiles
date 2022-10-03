@@ -13,5 +13,7 @@
 curl -L "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" -o ~/bin/kubectl
 chmod +x ~/bin/kubectl
 
+curl -L "https://github.com/argoproj/argo-cd/releases/download/v2.4.12/argocd-linux-amd64" -o ~/bin/argocd
+chmod +x ~/bin/argocd
 
 {{ end -}}
