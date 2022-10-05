@@ -1,0 +1,4 @@
+[profile c2c@schweizmobil]
+source_profile = camptocamp
+role_arn = arn:aws:iam::873203982376:role/camptocamp-dev-gs
+region = eu-west-1
