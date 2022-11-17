@@ -8,7 +8,7 @@
 #!/bin/bash
 
 {{ $sudo }} apt update
-{{ $sudo }} apt -y install git keychain
+{{ $sudo }} apt -y install git keychain jq
 
 curl -L "https://dl.k8s.io/v1.25.3/bin/linux/amd64/kubectl" -o ~/bin/kubectl
 chmod +x ~/bin/kubectl
