@@ -1,0 +1,6 @@
+### configuration file for openfortivpn, see man openfortivpn(1) ###
+
+host = vpn-ssl.camptocamp.com
+port = 443
+username = {{ (index (lastpass "ipa.camptocamp.com") 0).username }}
+password = {{ (index (lastpass "ipa.camptocamp.com") 0).password }}
