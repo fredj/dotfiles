@@ -8,12 +8,14 @@
 #!/bin/bash
 
 {{ $sudo }} apt update
-{{ $sudo }} apt -y install git keychain jq openfortivpn
+{{ $sudo }} apt -y install git keychain jq openfortivpn maim
 
 curl -L "https://dl.k8s.io/v1.25.3/bin/linux/amd64/kubectl" -o ~/bin/kubectl
 chmod +x ~/bin/kubectl
 
 curl -L "https://github.com/argoproj/argo-cd/releases/download/v2.4.12/argocd-linux-amd64" -o ~/bin/argocd
 chmod +x ~/bin/argocd
+
+curl -fsSL https://deno.land/x/install/install.sh | sh
 
 {{ end -}}
