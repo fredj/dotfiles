@@ -142,11 +142,3 @@ fi
 
 # See https://www.funtoo.org/Keychain
 eval "$(keychain -q --agents ssh,gpg --eval)"
-
-
-source <(gopass completion bash)
-source <(kubectl completion bash)
-source <(chezmoi completion bash)
-source <(npm completion)
-source <(deno completions bash)
-source <(poetry completions bash)

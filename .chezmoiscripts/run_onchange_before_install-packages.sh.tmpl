@@ -18,4 +18,11 @@ chmod +x ~/bin/argocd
 
 curl -fsSL https://deno.land/x/install/install.sh | sh
 
+gopass completion bash > ~/.local/share/bash-completion/completions/gopass
+kubectl completion bash > ~/.local/share/bash-completion/completions/kubectl
+chezmoi completion bash > ~/.local/share/bash-completion/completions/chezmoi
+npm completion > ~/.local/share/bash-completion/completions/npm
+deno completions bash > ~/.local/share/bash-completion/completions/deno
+poetry completions bash > ~/.local/share/bash-completion/completions/poetry
+
 {{ end -}}
