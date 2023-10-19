@@ -16,6 +16,9 @@ chmod +x ~/bin/kubectl
 curl -L "https://github.com/argoproj/argo-cd/releases/download/v2.4.12/argocd-linux-amd64" -o ~/bin/argocd
 chmod +x ~/bin/argocd
 
+curl -L "https://github.com/getsops/sops/releases/download/v3.8.1/sops-v3.8.1.linux.amd64" -o ~/bin/sops
+chmod +x ~/bin/sops
+
 curl -fsSL https://deno.land/x/install/install.sh | sh
 
 gopass completion bash > ~/.local/share/bash-completion/completions/gopass
